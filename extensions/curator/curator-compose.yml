@@ -6,6 +6,7 @@ services:
   curator:
     build:
       context: extensions/curator/
+    restart: always
     environment:
       ELASTICSEARCH_HOST: elasticsearch
       CRON: 0 0 * * *
